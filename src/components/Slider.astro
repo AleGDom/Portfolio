@@ -1,0 +1,95 @@
+---
+import HtmlIcon from "../components/icons/Html.astro";
+import CssIcon from "../components/icons/Css.astro";
+import JsIcon from "../components/icons/Javascript.astro";
+import PhpIcon from "../components/icons/Php.astro";
+import TailwindIcon from "../components/icons/Tailwind.astro";
+import AstroIcon from '../components/icons/AstroIcon.astro';
+import ReactIcon from '../components/icons/React.astro';
+
+---
+<div class="slider pt-[15rem]">
+    <div class="slider-track">
+        
+            <HtmlIcon class="size-[7rem] slide-item"/>
+        
+        
+            <CssIcon class="size-[7rem] slide-item"/>
+        
+        
+            <JsIcon class="size-[7rem] slide-item"/>
+        
+        
+            <PhpIcon class="size-[7rem] slide-item"/>
+        
+        
+            <TailwindIcon class="size-[7rem] slide-item"/>
+        
+        
+            <AstroIcon class="size-[7rem] slide-item"/>
+        
+        
+            <ReactIcon class="size-[7rem] slide-item"/>
+        
+    </div>
+    <div class="slider-track">
+        
+            <HtmlIcon class="size-[7rem] slide-item"/>
+        
+        
+            <CssIcon class="size-[7rem] slide-item"/>
+        
+        
+            <JsIcon class="size-[7rem] slide-item"/>
+        
+        
+            <PhpIcon class="size-[7rem] slide-item"/>
+        
+        
+            <TailwindIcon class="size-[7rem] slide-item"/>
+        
+        
+            <AstroIcon class="size-[7rem] slide-item"/>
+        
+        
+            <ReactIcon class="size-[7rem] slide-item"/>
+        
+    </div>
+</div>
+
+<style>
+    .slider{
+        
+        overflow-x: hidden;
+        white-space: nowrap;
+        height: auto;
+    }
+    .slider-track{
+        display: inline-block;
+        animation: 30s slide infinite linear;
+        height: 100px;
+        
+
+    }
+    .slide-item{
+        display: inline-block;
+        margin: 0 8rem;
+        transition: .3s transform ease ;
+
+
+    }
+
+    .slide-item:hover{
+        transform: scale(1.2);
+    }
+
+    @keyframes slide{
+        form{
+            transform: translateX(0);
+        } to{
+            transform: translateX(-100%);
+        }
+    } 
+
+    
+</style>
