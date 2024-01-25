@@ -1,0 +1,120 @@
+<a href="#" class="neon" >Hola
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+<style>
+    .neon{
+        position: relative;
+        display: inline-block;
+        color: rgba(255, 255, 255, .4);
+        font-size: 4rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        background: #262c37;
+        padding: 1rem 3rem;
+        transition: .5s;
+        transition-delay: .8s;
+    }
+
+    .neon:hover{
+        color: #00eeff;
+        letter-spacing: .25em;
+        text-shadow: 0 0 5px #00eeff;
+        transition-delay: 1ms;
+    }
+    .neon span{
+        position: absolute;
+        display: block;
+        background-color: #00eeff;
+
+    }
+    .neon span:nth-child(1){
+        left: 0;
+        top: 0;
+        width: 50.5%;
+        height: 3px;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .neon:hover span:nth-child(1){
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    .neon span:nth-child(2){
+        right: 0;
+        top: 0;
+        width: 50.5%;
+        height: 3px;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .neon:hover span:nth-child(2){
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    .neon span:nth-child(3){
+        right: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleY(0);
+        transition: transform .5s;
+        transition-delay: .4s;
+    }
+
+    .neon:hover span:nth-child(3){
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+    .neon span:nth-child(4){
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleY(0);
+        transition: transform .5s;
+        transition-delay: .4s;
+    }
+
+    .neon:hover span:nth-child(4){
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+    .neon span:nth-child(5){
+        left: 0;
+        bottom: 0;
+        width: 50.5%;
+        height: 3px;
+        transform: scaleX(0);
+        transition: transform .5s;
+        transition-delay: .8s;
+    }
+
+    .neon:hover span:nth-child(5){
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    .neon span:nth-child(6){
+        right: 0;
+        bottom: 0;
+        width: 50.5%;
+        height: 3px;
+        transform: scaleX(0);
+        transition: transform .5s;
+        transition-delay: .8s;
+    }
+
+    .neon:hover span:nth-child(6){
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+</style>
